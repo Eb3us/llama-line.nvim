@@ -68,7 +68,7 @@ function BinaryLifecycle:provide_inline_completion_items(buffer, cursor)
     "-s",
     "-X",
     "POST",
-    "http://localhost:11434/api/generate",
+    (vim.env.OLLAMA_HOST or "http://localhost:11434") .. "/api/generate",
     "-d",
     body,
   }, { text = true }, function(obj)
