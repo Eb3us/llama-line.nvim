@@ -2,6 +2,7 @@ local completion_preview = require("llamaline-nvim.completion_preview")
 local log = require("llamaline-nvim.logger")
 local config = require("llamaline-nvim.config")
 local commands = require("llamaline-nvim.commands")
+local document_listener = require("llamaline-nvim.document_listener")
 
 local M = {}
 
@@ -50,6 +51,7 @@ M.setup = function(args)
       )
     end
   end
+  document_listener.setup()
 end
 
 return M
