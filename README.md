@@ -1,3 +1,11 @@
+# llama-line.nvim (personal fork)
+
+This is a personal fork of [penczak/llama-line.nvim](https://github.com/penczak/llama-line.nvim).
+
+**Change made:** The hardcoded Ollama URL (`http://localhost:11434`) was replaced with a read from the `OLLAMA_HOST` environment variable, allowing the plugin to point to a remote Ollama server on the local network.
+
+The rest of the code and the original documentation remain unchanged.
+
 # LlamaLine Neovim Plugin
 
 ### In-line completions in Neovim using Ollama
